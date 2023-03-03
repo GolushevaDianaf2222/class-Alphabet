@@ -1,0 +1,19 @@
+class Alphabet:
+    def __init__(self,lang,letters):
+        self.lang=lang
+        self.letters=letters
+    def print(self):print(self.letters)
+    def letters_num(self):print(len(self.letters))
+class EngAlphabet:
+    def __init__(self):
+        Alphabet.__init__(self,'En','ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+        self.__letters_num=len(self.letters)
+    def is_en_letter(self,letter):return(letter in self.letters)
+    def letters_num(self):return self.__letters_num
+    def example(self):return'I love pelmenia.'
+        
+    
+    
+
+        
+        
